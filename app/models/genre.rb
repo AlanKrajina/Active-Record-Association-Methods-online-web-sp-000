@@ -18,4 +18,10 @@ class Genre < ActiveRecord::Base
     end 
 
   end
+  
+    artists = self.artists.collect do |artist|
+      artist.name
+      end
+    end
+  
 end
