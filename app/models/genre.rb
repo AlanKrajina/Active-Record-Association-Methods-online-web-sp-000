@@ -16,7 +16,6 @@ class Genre < ActiveRecord::Base
     self.artists.select do |ime|
      artists_array << ime.name    
     end 
-       binding.pry
-   
+
   end
 end
