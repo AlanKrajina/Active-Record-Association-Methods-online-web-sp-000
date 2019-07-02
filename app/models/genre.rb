@@ -14,7 +14,8 @@ class Genre < ActiveRecord::Base
     
     artists_array=[]
     self.artists.collect do |ime|
-     artists_array << ime.name    
+     artists_array << ime.name 
+     artists_array
     end 
 
   end
