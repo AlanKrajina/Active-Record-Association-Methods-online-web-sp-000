@@ -12,17 +12,8 @@ class Genre < ActiveRecord::Base
 
   def all_artist_names
     
-    artists_array=[]
-    self.artists.collect do |ime|
-     artists_array << ime.name 
-     artists_array
-    end 
-
+    artists = self.artists.collect do |artist|
+      artist.name
+    end
   end
-  
-  #  artists = self.artists.collect do |artist|
-  #    artist.name
-  #    end
-  #  end
-  
 end
