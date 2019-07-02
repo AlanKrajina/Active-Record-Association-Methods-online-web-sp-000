@@ -19,9 +19,9 @@ class Genre < ActiveRecord::Base
 
   end
   
-    artists = self.artists.collect do |artist|
-      artist.name
-      end
-    end
+  #  artists = self.artists.collect do |artist|
+  #    artist.name
+  #    end
+  #  end
   
 end
